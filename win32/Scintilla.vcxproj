@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|ARM64">
@@ -36,7 +36,7 @@
   <PropertyGroup>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <UseDebugLibraries>true</UseDebugLibraries>
@@ -169,16 +169,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\*.cxx" />
+    <ClCompile Include="..\src\AutoComplete.cxx;..\src\CallTip.cxx;..\src\CaseConvert.cxx;..\src\CaseFolder.cxx;..\src\CellBuffer.cxx;..\src\ChangeHistory.cxx;..\src\CharacterCategoryMap.cxx;..\src\CharacterType.cxx;..\src\CharClassify.cxx;..\src\ContractionState.cxx;..\src\DBCS.cxx;..\src\Decoration.cxx;..\src\Document.cxx;..\src\EditModel.cxx;..\src\Editor.cxx;..\src\EditView.cxx;..\src\Geometry.cxx;..\src\Indicator.cxx;..\src\KeyMap.cxx;..\src\LineMarker.cxx;..\src\MarginView.cxx;..\src\PerLine.cxx;..\src\PositionCache.cxx;..\src\RESearch.cxx;..\src\RunStyles.cxx;..\src\ScintillaBase.cxx;..\src\Selection.cxx;..\src\Style.cxx;..\src\UndoHistory.cxx;..\src\UniConversion.cxx;..\src\UniqueString.cxx;..\src\ViewStyle.cxx;..\src\XPM.cxx" />
     <ClCompile Include="..\win32\HanjaDic.cxx" />
     <ClCompile Include="..\win32\PlatWin.cxx" />
     <ClCompile Include="..\win32\ScintillaWin.cxx" />
     <ClCompile Include="..\win32\ScintillaDLL.cxx" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\*.h" />
-    <ClInclude Include="..\src\*.h" />
-    <ClInclude Include="..\win32\*.h" />
+    <ClInclude Include="..\include\ILexer.h;..\include\ILoader.h;..\include\Sci_Position.h;..\include\Scintilla.h;..\include\ScintillaCall.h;..\include\ScintillaMessages.h;..\include\ScintillaStructures.h;..\include\ScintillaTypes.h;..\include\ScintillaWidget.h" />
+    <ClInclude Include="..\src\AutoComplete.h;..\src\CallTip.h;..\src\CaseConvert.h;..\src\CaseFolder.h;..\src\CellBuffer.h;..\src\ChangeHistory.h;..\src\CharacterCategoryMap.h;..\src\CharacterType.h;..\src\CharClassify.h;..\src\ContractionState.h;..\src\DBCS.h;..\src\Debugging.h;..\src\Decoration.h;..\src\Document.h;..\src\EditModel.h;..\src\Editor.h;..\src\EditView.h;..\src\ElapsedPeriod.h;..\src\Geometry.h;..\src\Indicator.h;..\src\KeyMap.h;..\src\LineMarker.h;..\src\MarginView.h;..\src\Partitioning.h;..\src\PerLine.h;..\src\Platform.h;..\src\Position.h;..\src\PositionCache.h;..\src\RESearch.h;..\src\RunStyles.h;..\src\ScintillaBase.h;..\src\Selection.h;..\src\SparseVector.h;..\src\SplitVector.h;..\src\Style.h;..\src\UndoHistory.h;..\src\UniConversion.h;..\src\UniqueString.h;..\src\ViewStyle.h;..\src\XPM.h" />
+    <ClInclude Include="..\win32\HanjaDic.h;..\win32\PlatWin.h;..\win32\ScintillaWin.h;..\win32\WinTypes.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\win32\ScintRes.rc" />
